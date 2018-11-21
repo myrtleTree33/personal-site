@@ -15,7 +15,7 @@ const Blog = props => {
           justifyContent: 'center'
         }}
       >
-        <h1>Joel's blog</h1>
+        <h1>Joel's Blog</h1>
       </div>
       {posts.map(p => (
         <BlogPost {...p} />

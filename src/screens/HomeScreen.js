@@ -22,6 +22,8 @@ const Home = () => {
     posts: getPosts()
   };
 
+  console.log(process.env.REACT_APP_STATIC_FILE_URL);
+
   return (
     <div>
       <div
@@ -30,7 +32,8 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
 
-          background: 'grey',
+          background: `url(${process.env.REACT_APP_STATIC_FILE_URL}/cover.jpg)`,
+          backgroundPosition: '50% 50%',
           minHeight: '80vh',
           width: '100%'
         }}
@@ -42,7 +45,7 @@ const Home = () => {
               fontSize: '2.1em'
             }}
           >
-            Random Musings
+            {/* Random Musings */}
           </h1>
         </div>
       </div>
