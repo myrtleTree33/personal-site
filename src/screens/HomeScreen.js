@@ -26,11 +26,26 @@ const Home = () => {
     <div>
       <div
         style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+
           background: 'grey',
-          minHeight: '50vh',
+          minHeight: '80vh',
           width: '100%'
         }}
-      />
+      >
+        <div>
+          <h1
+            style={{
+              color: '#fff',
+              fontSize: '2.1em'
+            }}
+          >
+            Random Musings
+          </h1>
+        </div>
+      </div>
       <div
         style={{
           width: '100%',

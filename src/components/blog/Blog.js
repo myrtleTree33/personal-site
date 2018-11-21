@@ -6,7 +6,15 @@ const Blog = props => {
   const { posts } = props;
   return (
     <div>
-      <div>
+      <div
+        style={{
+          margin: '2rem 0 3.2rem 0',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
         <h1>Joel's blog</h1>
       </div>
       {posts.map(p => (
