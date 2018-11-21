@@ -49,8 +49,7 @@ class App extends Component {
               margin: '2rem 0 1rem 0'
             }}
           >
-            <div>Joel Tong</div>
-            <div>Code . Ship . Repeat</div>
+            <div>Made in Singapore</div>
           </Footer>
         </Layout>
       </div>

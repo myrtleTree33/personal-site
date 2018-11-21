@@ -22,15 +22,33 @@ const Home = () => {
     posts: getPosts()
   };
 
+  console.log(process.env.REACT_APP_STATIC_FILE_URL);
+
   return (
     <div>
       <div
         style={{
-          background: 'grey',
-          minHeight: '50vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+
+          background: `url(${process.env.REACT_APP_STATIC_FILE_URL}/cover.jpg)`,
+          backgroundPosition: '50% 50%',
+          minHeight: '80vh',
           width: '100%'
         }}
-      />
+      >
+        <div>
+          <h1
+            style={{
+              color: '#fff',
+              fontSize: '2.1em'
+            }}
+          >
+            {/* Random Musings */}
+          </h1>
+        </div>
+      </div>
       <div
         style={{
           width: '100%',

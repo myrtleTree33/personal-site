@@ -6,10 +6,18 @@ const BlogPost = props => {
   return (
     <div
       style={{
-        margin: '0 0 3.2em 0'
+        margin: '0 0 4.1rem 0'
       }}
     >
-      <div>{heading}</div>
+      <div>
+        <h2
+          style={{
+            marginBottom: '1rem'
+          }}
+        >
+          {heading}
+        </h2>
+      </div>
       <div>{content}</div>
     </div>
   );
