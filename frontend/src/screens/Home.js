@@ -12,7 +12,7 @@ const Home = () => {
       },
       {
         id: 1,
-        heading: 'Hello World 2!',
+        heading: 'The day the earth stood still',
         content: 'This is a sample post'
       }
     ];

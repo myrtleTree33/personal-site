@@ -15,7 +15,14 @@ const Blog = props => {
           justifyContent: 'center'
         }}
       >
-        <h1>Joel's Blog</h1>
+        <h1
+          style={{
+            fontFamily: 'Amatic SC',
+            fontSize: '3em'
+          }}
+        >
+          Joel's Blog
+        </h1>
       </div>
       {posts.map(p => (
         <BlogPost {...p} />

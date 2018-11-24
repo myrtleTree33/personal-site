@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 
-import HomeScreen from './screens/HomeScreen';
-import StoryScreen from './screens/StoryScreen';
+import HomeScreen from './screens/Home';
+import PortfolioScreen from './screens/Portfolio';
+import ContactScreen from './screens/Contact';
 
 const { Header, Content, Footer } = Layout;
 
@@ -29,7 +30,10 @@ class App extends Component {
                 <Link to="/">Home</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/story">Story</Link>
+                <Link to="/portfolio">Portfolio</Link>
+              </Menu.Item>
+              <Menu.Item key="3">
+                <Link to="/contact">Contact</Link>
               </Menu.Item>
             </Menu>
           </Header>
@@ -40,7 +44,8 @@ class App extends Component {
           >
             <Switch>
               <Route exact path="/" component={HomeScreen} />
-              <Route path="/story" component={StoryScreen} />
+              <Route path="/portfolio" component={PortfolioScreen} />
+              <Route path="/contact" component={ContactScreen} />
             </Switch>
           </Content>
           <Footer
@@ -49,7 +54,14 @@ class App extends Component {
               margin: '2rem 0 1rem 0'
             }}
           >
-            <div>Made in Singapore</div>
+            <div
+              style={{
+                fontFamily: 'Inconsolata',
+                fontSize: '1em'
+              }}
+            >
+              Made in Singapore
+            </div>
           </Footer>
         </Layout>
       </div>
