@@ -1,11 +1,12 @@
 import React, { Component, PropTypes } from 'react';
+import Contact from '../components/contact/Contact';
 
-const Contact = ({ name }) => {
-  return <div>This is the CV page</div>;
+const ContactScreen = ({ name }) => {
+  return <Contact />;
 };
 
-Contact.propTypes = {
+ContactScreen.propTypes = {
   //   name: PropTypes.string.isRequired
 };
 
-export default Contact;
+export default ContactScreen;
