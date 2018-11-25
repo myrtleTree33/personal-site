@@ -29,10 +29,10 @@ class App extends Component {
               <Menu.Item key="1">
                 <Link to="/">Home</Link>
               </Menu.Item>
-              <Menu.Item key="2">
+              {/* <Menu.Item key="2">
                 <Link to="/portfolio">Portfolio</Link>
-              </Menu.Item>
-              <Menu.Item key="3">
+              </Menu.Item> */}
+              <Menu.Item key="2">
                 <Link to="/contact">Contact</Link>
               </Menu.Item>
             </Menu>
@@ -44,7 +44,7 @@ class App extends Component {
           >
             <Switch>
               <Route exact path="/" component={HomeScreen} />
-              <Route path="/portfolio" component={PortfolioScreen} />
+              {/* <Route path="/portfolio" component={PortfolioScreen} /> */}
               <Route path="/contact" component={ContactScreen} />
             </Switch>
           </Content>

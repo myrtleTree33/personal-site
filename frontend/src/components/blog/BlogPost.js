@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import './BlogPost.css';
+
 const BlogPost = props => {
   const { id, heading, content } = props;
   return (
@@ -8,6 +10,7 @@ const BlogPost = props => {
       style={{
         margin: '0 0 4.1rem 0'
       }}
+      className="blog-container"
     >
       <div>
         <h2
@@ -22,13 +25,14 @@ const BlogPost = props => {
         </h2>
       </div>
       <div
-        style={{
-          fontFamily: 'Roboto',
-          fontWeight: 300
-        }}
-      >
-        {content}
-      </div>
+        style={
+          {
+            // fontFamily: 'Roboto',
+            // fontWeight: 300
+          }
+        }
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </div>
   );
 };

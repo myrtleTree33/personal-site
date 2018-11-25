@@ -25,7 +25,7 @@ const Blog = props => {
         </h1>
       </div>
       {posts.map(p => (
-        <BlogPost {...p} />
+        <BlogPost key={p.id} {...p} />
       ))}
     </div>
   );
